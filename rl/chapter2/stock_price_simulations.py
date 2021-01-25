@@ -1,3 +1,7 @@
+import sys
+sys.path.append("/Users/leore/Desktop/StanfordCourses/CME241/RL-book")
+
+
 from dataclasses import dataclass
 from typing import Optional, Mapping, Sequence, Tuple
 from collections import Counter

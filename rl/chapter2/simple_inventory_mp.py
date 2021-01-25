@@ -1,9 +1,11 @@
+import sys
+sys.path.append("/Users/leore/Desktop/StanfordCourses/CME241/RL-book")
+
 from dataclasses import dataclass
 from typing import Mapping, Dict
 from rl.distribution import Categorical
 from rl.markov_process import Transition, FiniteMarkovProcess
 from scipy.stats import poisson
-
 
 @dataclass(frozen=True)
 class InventoryState:
