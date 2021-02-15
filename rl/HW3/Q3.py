@@ -27,7 +27,7 @@ class FrogAndLilypadsMDP(FiniteMarkovDecisionProcess[int, str]) :
         for i in range(1, self.n):
             actionMap : Dict[str, Categorical[Tuple[int, int]]] = {}
 
-            sr_probs_dict_A : Dict[Tuple[int, int], float] = {(i+1, 1): (self.n-i)/n, (i-1, -1): i/self.n}
+            sr_probs_dict_A : Dict[Tuple[int, int], float] = {(i+1, 1): (self.n-i)/self.n, (i-1, -1): i/self.n}
             actionMap["A"] = Categorical(sr_probs_dict_A)
 
             sr_probs_dict_B : Dict[Tuple[int, int], float] = {(j, j-i): 1/self.n for j in range(0,self.n+1) if j != i}

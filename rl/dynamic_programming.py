@@ -22,7 +22,7 @@ def evaluate_mrp(
     mrp: FiniteMarkovRewardProcess[S],
     gamma: float
 ) -> Iterator[np.ndarray]:
-    '''Iteratively calculate the value function for the give Markov reward
+    '''Iteratively calculate the value function for the given Markov reward
     process.
 
     '''
